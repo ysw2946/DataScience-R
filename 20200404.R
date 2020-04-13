@@ -74,3 +74,28 @@ z
 
 u <- 0/0
 u
+
+gender <- c("남","여","남")
+gender
+
+gender.factor<- factor(gender)
+gender.factor
+
+x <- c(70, 80, 95)
+arr <- array(x)
+arr
+
+x <- list("알라딘", 20, c(70,80))
+x
+
+x[1]
+x[[1]]
+
+x <- list(성명="알라딘", 나이=20, 성적=c(70,80))
+x
+
+x[1]
+
+x[[1]]
+
+df <- data.frame(성명=c("알라딘",""))
