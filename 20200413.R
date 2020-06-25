@@ -1,4 +1,4 @@
-install.packages("plotrix")
+#install.packages("plotrix")
 library(plotrix)
 
 # 기본 파이차트
