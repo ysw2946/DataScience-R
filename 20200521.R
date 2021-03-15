@@ -8,8 +8,8 @@ serchUrl <- "https://openapi.naver.com/v1/search/news.xml"
 Client_ID <- "dldYzPelmQF1dAFHfHHL"
 Client_Secret <- "tuv6N98p6A"
 
-query <- URLencode(iconv("유승우","euc-kr","UTF-8"))
-url <- paste(serchUrl,"?query=",query,"&display=20",sep="")
+query <- URLencode(iconv("세금","euc-kr","UTF-8"))
+url <- paste(serchUrl,"?query=",query,"&display=100","&sort=date",sep="")
 
 doc <- getURL(url,
               httpheader=c('Content-Type'="application/xml",
@@ -51,3 +51,5 @@ wordcloud(nouns.df.sort[,1],
           random.color=T,
           colors = rainbow(10))
 
+write.csv(nouns.df.sort,"C:/r/세금2.csv")
+  
